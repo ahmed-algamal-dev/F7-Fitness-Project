@@ -1,0 +1,723 @@
+@import url(../CSS/bootstrap.min.css);
+@import url(../CSS/font.CSS);
+@import url(../CSS/header.CSS);
+@import url(../CSS/Static.CSS);
+
+
+  
+/* hero */
+.hero{
+    padding: 100px 0;
+height: 600px;
+background-image: url(../images/imgi_24_iStock-923745066-1-scaled.jpg);
+background-position: center;
+background-size: cover;
+background-attachment: fixed;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+} 
+.hero .work {
+    transform: skewY(-20deg);
+    text-align: center;
+    margin: auto;
+    width: 400px;
+    height: 130px;
+    color: black;
+    font-size:40px ;
+    font-weight: bold;
+    background-color:#d6fb00;
+    padding: 5px 30px 20px ;
+}
+.hero .feel{
+    transform: skewY(-20deg);
+     text-align: center;
+    margin: auto;
+    width: 400px;
+    height: 130px;
+    color: black;
+    font-size:40px ;
+    font-weight: bold;
+    background-color:#d6fb00;
+    padding: 5px 30px 20px ;
+}
+ .hero .fot img {
+    padding: 0;
+    width: 350px;
+    height: 100px;
+}
+.hero .fot{ 
+    transform: skewY(-20deg);
+ text-align: center;
+    margin: auto;
+    width: 400px;
+    height: 130px;
+    color: black;
+    font-size:40px ;
+    font-weight: bold;
+    background-color:#d6fb00;
+    padding: 5px 30px 20px ;
+}
+/* classes */
+.classes{
+    background-color:rgba(0, 0, 0, 0.91);
+    margin: 0;
+}
+.classes h2{
+    text-align: center;
+    color: white;
+    font-size: 36px;
+    font-weight: bold;
+    margin: 0;
+    padding: 30px 0;
+}
+.classes span{
+    text-align: center;
+    color: white;
+    font-size: 90px;
+     font-weight: bold;
+}
+/* cards */
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.91);
+    padding: 70PX 30px;
+}
+.cards .card{
+    width: 23%;;
+    background: none;
+    color: white;
+    cursor: pointer;
+    /* box-shadow:-5px 5px 5px  2px rgba(245, 245, 220, 0.15); */
+}
+.card_img img{
+    width: 100%;
+    height: 400px;
+
+}
+ .card .card_phg h3{
+font-size: 30px;
+    padding: 30px 0;
+    font-weight: bold;
+    transition: all .5s;
+}
+.card_icon img{
+    width: 20px;
+}
+.card .parent{
+    display: flex;
+}
+.card_icon{
+    padding: 15px 0;
+    padding-left: 70px;
+}
+.card:hover h3{
+    color: #d6fb00 ;
+}
+.card_img {
+    overflow: hidden;
+    position: relative;
+}
+.card img{
+    transition: all .5s;
+}
+.card:hover img{
+    transform: scale(1.2);
+}
+.card_img::after{
+    transition: all .5s;
+}
+.card_img:hover::after{
+    content: "";
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    inset: 0; 
+}
+/* club */
+.club{
+    padding: 90px 40px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.club .mid{
+    width: 30%;
+}
+.mid_img img{
+    width: 300px;
+animation-name: ahmed ;
+animation-iteration-count: infinite;
+animation-duration: 2s;
+}
+.mid_phg {
+   width:250px; 
+    height: 120PX;
+    position: absolute;
+    top: 220px;
+    left: 10%;
+    text-align: center;
+}
+.mid_phg p{
+    font-weight: bold;
+    font-size: 36px;
+}
+.mid_phg span{
+    font-weight: bold;
+    font-size: 90px;
+}
+@keyframes ahmed{
+0%{transform: translate(0);}
+50%{transform: translate(50px);}
+100%{transform: translate(0);}
+}
+.club .mission{
+width: 30%;
+ position: relative;
+    top: 300px;
+}
+.mission_img img{
+    width: 100%;
+}
+ .club .story{
+    width: 30%;
+ }
+ .story_img img{
+    width: 100%;
+ }
+.equipment{
+    width: 60%;
+    padding: 50px;
+    position: relative;
+    top: 350px;
+}.equipment_img img{
+    width: 100%;
+}
+.approach{
+     width: 33%;
+    padding: 50px;
+    position: relative;
+    top: 70px;
+}
+.approach_img img{
+    width: 100%;
+}
+/* cycle */
+.cycle{
+    position: relative;
+}
+.cycle_img img{
+    width: 100%;
+    height: 430px;
+}
+.cycle_logo{
+    position: absolute;
+    right: 80px;
+    top:73%;
+    animation-name: elgamal;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes elgamal{
+    0%{transform: translate(0);}
+50%{transform: translate(50px);}
+100%{transform: translate(0);}
+}
+/* succeed */
+.succed-phg{
+    margin-top: 30px;
+    text-align: center;
+    color: black;
+}
+.succed-phg p{
+    font-size: 36px;
+    font-weight: bold;
+}
+.succed-phg span{
+    font-size: 90px;
+     font-weight: bold;
+}
+/* Carousel */
+.Carousel{
+    padding: 80px 50px;
+}
+.w-25 {
+    height: 400px;
+    cursor: pointer;
+}
+.carousel-control-next, .carousel-control-prev{
+color: rgb(171, 21, 21);
+
+}
+.carousel-item .space{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+ .space .space_phg {
+    padding: 0 20px;
+    text-align: center;
+}
+.space .space_phg p{
+    font-size: 23px;
+}
+.carousel-control-prev-icon{
+    background-image: url(../images/download\ \(3\).svg);
+}
+.carousel-control-next-icon{
+     background-image: url(../images/download\ \(2\).svg);
+}
+/* join */
+.join{
+    height: 500px;
+    background-color: #d6fb00;
+}
+.join p{
+    text-align: center;
+    font-size: 70px;
+}
+.circle {
+    /* margin: auto; */
+    width: 50px;
+    border: 1px solid black;
+    border-radius: 50%;
+    color:#d6fb00;
+    background-color: black;
+     margin: 0 80px;
+    position: relative;
+}
+.circle::after{
+    content: "";
+    width: 100px ;
+    height: 2px ;
+    background-color: black;
+    position: absolute;
+    top: 50%;
+    right: -250%;
+}
+.circle2{ 
+ width: 50px;
+    border: 1px solid black;
+    border-radius: 50%;
+    color: black;
+   
+    margin: 0 62px;
+    position: relative;
+}
+.join .space{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+   
+       /* price */
+.price{
+    background-color: #d6fb00;
+    height: 600PX;
+    display: flex;
+    justify-content: space-around
+}
+.price .card{
+    margin: 50px 0;
+    background: none;
+    width: 28%;
+    height: 400px;
+    overflow: hidden;
+    transition: all .5s;
+    cursor: pointer;
+     box-shadow:-5px 5px 5px 2px black;
+}
+.price .card span{
+    padding: 25PX 0;
+    text-align: center;
+    font-weight: bold;
+}
+.price .card H4{
+     color: black;
+    text-align: center;
+      font-weight: bold;
+}
+.price .card p{
+    padding: 10px 85px ; 
+     color: black;
+    text-align: center;
+    font-size: 18px;
+}
+.price .card:hover{
+    border: 4px solid black;
+}
+.card .phg{
+    overflow: hidden;
+}
+    /* intro */
+.intro{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 100px 0 40px 0;
+}
+.intro h1{
+font-size: 65px;
+font-weight: bold;
+}
+    /* training */
+.training{
+    color: white;
+    background-color:#191919;
+    display: flex;
+    height: 300px;
+    position: relative;
+}
+.training img{
+    width: 300px;
+}
+.training .logo{
+    position: absolute;
+    top: -100px;
+    right: 60px;
+    animation-name: arrow;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+}
+@keyframes arrow{
+    0%{
+        transform: translate(0px);
+    }
+    50%{ transform: translate(50px);}
+    100%{ transform: translate(0px);}
+}
+.training .text{
+    margin: auto;
+}
+.training .text p{
+    font-size: 23px;
+}
+    /* door */
+.door{
+  background-color:#191919;
+  color: white;
+  height: 150px;
+}
+.door .out h2{
+    text-align: center;
+    font-size: 40px;
+}
+.box{
+    background-color: #191919;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+}
+.box .cor{
+    width: 23%;
+  
+}
+.cor_img img{
+    width: 100%;
+    transition: all .5s;
+    height: 350px;
+}
+.cor:hover img{
+    transform: scale(1.2);
+}
+.cor_img {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+.cor_img .btn{
+    background-color:  #d6fb00;
+    width: 100%;
+    height: 40px;
+    position: absolute;
+    z-index: 2;
+    bottom: -40px;
+    left: 0;
+    right: 0;
+     transition: all .5s;
+}
+
+.cor:hover .btn{
+    bottom: 0;
+}
+.cor_img:hover:after{
+    content: "";
+    position: absolute;
+    z-index: 1;
+    background-color: #1919197f;
+    inset: 0;
+
+}
+.cor h3{
+    font-size: 30px;
+    padding: 10px 0;
+    transition: all .5s;
+    cursor: pointer;
+}
+.cor:hover h3{
+    color: #d6fb00;
+}
+
+    .med h2{
+        font-weight: bold;
+        padding: 50px 0;
+        text-align: center;
+    }
+    .box2 {
+background-color: white;
+color: #191919;
+    }
+/* digital */
+.digital{
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+}
+.digital .left{
+    width: 48%;
+}
+.digital .logo img{
+    width: 270px;
+}
+.digital .logo {
+    padding-left: 150px;
+}
+.digital .text{
+    font-size:36px ;
+    font-weight: bold;
+    position: absolute;
+    left: 240px;
+    top: 30%;
+}
+.digital .text span{
+    font-size: 60px;
+}
+.digital .right{
+width: 48%;
+}
+.yoga_img img{
+width: 650px;
+height: 400px;
+}
+.yoga_text p{
+    text-align: center;
+}
+/* car  */
+.car{
+    margin: 60px 20px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+}
+.car .card{
+    width: 34% ;
+    width: 350px;
+    height: 500px;
+    color:white;
+    background-color: #191919;
+       box-shadow:-5px 5px 5px 2px rgba(255, 255, 255, 0.111);
+       cursor: pointer;
+}
+.car .card p,h4{
+    text-align: center;
+}
+.car .card p{
+    padding: 40px 0;
+}
+.card_logo {
+    padding: 40px 0 40px 25px;
+}
+.card_logo img{
+    width: 40px;
+}
+
+.card_phg h4{
+    padding: 40px 0;
+}
+.card_phg span{
+    padding-top: 20px;
+    padding-left: 10px;
+font-size: 30px;
+font-weight: bold;
+}
+.card hr{
+    text-align: center;
+    width: 70%;
+    border: none;
+    border-top: 2px solid rgba(0, 0, 0, 0.634);
+    margin: 10px auto;
+}
+/* photo */
+.photo img{
+    width: 100%;
+    height: 500px;
+}
+.fot img{
+    width: 100%;
+    height: 400px;
+}
+.mo{
+    margin: 70px 30px;
+    display: flex;
+}
+.mo_phg{
+    padding-top: 80px;
+height: 50%;
+    width: 48%;
+    margin: 0;
+}
+.mo_phg h3{
+    padding: 40px 0;
+    font-size: 40px;
+    font-weight: bold;
+}
+.mo_photo{
+ width: 48%;
+}
+.mo_photo img{
+    width: 650px;
+    height: 400px;
+}
+.man{
+    display: flex;
+    justify-content: space-between;
+}
+.man_photo{
+    margin: 70px 30px ;
+    width: 48%;
+}
+.man_photo img{
+    width: 100%;
+}
+.man_phg {
+    padding-top: 60px;
+    width: 48%;
+}
+.man_phg h3{
+    padding: 35px 0;
+    font-size: 40px ;
+    font-weight: bold;
+}
+.footer{
+    height: 350px;
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+    color: white;
+
+}
+.footer li{
+    font-size: 20px;
+}
+#club ul li {
+  font-size: 18px;
+}
+
+#club img {
+  transition: 0.4s;
+}
+#club img{
+    width: 500px;
+    height: 500px;
+}
+
+#club img:hover {
+  transform: scale(1.05);
+}
+#club img{
+    cursor: pointer;
+}
+/* --- Tablet & Mobile Responsive Fix --- */
+
+@media (max-width: 992px) {
+    .cards .card, .box .cor {
+        width: 45%; 
+        margin-bottom: 30px;
+    }
+    .price .card, .car .card {
+        width: 45%;
+        height: auto;
+    }
+    .hero .work, .hero .feel, .hero .fot {
+        width: 80%;
+    }
+    .digital {
+        flex-direction: column;
+        align-items: center;
+    }
+    .digital .left, .digital .right {
+        width: 100%;
+        text-align: center;
+    }
+    .digital .text {
+        position: static;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 992px) {
+    .cards, .price, .box, .car {
+        display: flex !important;
+        flex-direction: column !important; 
+        align-items: center !important;
+        padding: 20px 10px !important;
+    }
+
+    .cards .card, .price .card, .box .cor, .car .card {
+        width: 90% !important; 
+        max-width: 400px;
+        margin: 15px 0 !important; 
+        height: auto !important;
+    }
+
+    .price .card p, .car .card p {
+        padding: 15px !important;
+        font-size: 17px !important;
+        line-height: 1.6;
+    }
+}
+@media (max-width: 992px) {
+    .digital {
+        flex-direction: column !important;
+        padding: 40px 10px !important;
+    }
+    
+    .digital .left, .digital .right {
+        width: 100% !important;
+        text-align: center;
+    }
+
+    .digital .logo img {
+        width: 150px !important; 
+        margin: 0 auto;
+    }
+
+    .digital .text {
+        position: static !important; 
+        margin: 20px 0 !important;
+    }
+
+    .yoga {
+        flex-direction: column !important;
+    }
+
+    .yoga_img img {
+        height: 350px;
+        width: 100% !important;
+        border-radius: 10px;
+    }
+
+    .yoga_text {
+        padding: 20px 0 !important;
+    }
+}
